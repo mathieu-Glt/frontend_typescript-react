@@ -40,7 +40,7 @@ export const LoginPage = () => {
           setRefreshToken(result.results.refreshToken);
         }
 
-        navigate("/");
+        navigate("/products");
       } else {
         console.error("Login failed:", result.message);
       }

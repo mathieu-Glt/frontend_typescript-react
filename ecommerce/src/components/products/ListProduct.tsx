@@ -33,7 +33,7 @@ export const ListProduct = () => {
       setClicked(false);
       setBackList(false);
       setCurrentPage(1);
-      navigate("/");
+      navigate("/products");
     }
   }, [backList, navigate]);
   useEffect(() => {
