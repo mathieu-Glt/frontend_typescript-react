@@ -27,9 +27,15 @@ export const ListProduct = () => {
   const pageSize = 3;
   const [clicked, setClicked] = useState(false);
 
-  if (backList) {
-    window.location.reload();
-  }
+  useEffect(() => {
+    if (backList) {
+      setSearchProducts([]);
+      setClicked(false);
+      setBackList(false);
+      setCurrentPage(1);
+      navigate("/");
+    }
+  }, [backList, navigate]);
   useEffect(() => {
     getAllProducts();
   }, [listProducts]);
