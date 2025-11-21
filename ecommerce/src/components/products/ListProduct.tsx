@@ -29,7 +29,7 @@ export const ListProduct = () => {
 
   useEffect(() => {
     if (backList) {
-      // setSearchProducts([]);
+      setSearchProducts([]);
       setClicked(false);
       setBackList(false);
       // setCurrentPage(1);
