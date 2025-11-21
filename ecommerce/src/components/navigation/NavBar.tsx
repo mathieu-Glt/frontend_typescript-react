@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../routes";
 import logo from "../../assets/logo.png";
-import "./NavBar.css";
+import "./navbar.css";
 import { useUserContext } from "../../context/userContext";
 import { useAuth } from "../../hooks/useAuth";
 import LogoutButton from "../Logout/LogoutButton";

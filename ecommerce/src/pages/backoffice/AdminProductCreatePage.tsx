@@ -1,7 +1,6 @@
 // src/pages/backoffice/AdminProductCreatePage.tsx
 import React, { useState, useEffect } from "react";
 import { useFormik } from "formik";
-import axios, { type AxiosInstance } from "axios";
 import "../styles/admin-product-create.css";
 import useCategory from "../../hooks/useCategory";
 import useSubCategory from "../../hooks/useSubCategory";
