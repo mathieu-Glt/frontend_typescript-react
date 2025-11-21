@@ -17,7 +17,7 @@ import { API_ROUTES } from "../constants/api-routes";
 import type { RegisterFormData } from "../../interfaces/regsiterProps.interface";
 
 // Define BASE_URL or import from your config
-const BASE_URL = process.env.VITE_API_BASE_URL || "http://localhost:5173";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 // eslint-disable-next-line react-hooks/rules-of-hooks
 const api: AxiosInstance = useApi();
 

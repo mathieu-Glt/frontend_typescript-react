@@ -8,7 +8,7 @@ import type { ProductListResponse } from "../../interfaces/responseProduct.inter
 import { API_ROUTES } from "../constants/api-routes";
 
 // Define BASE_URL or import from your config
-const BASE_URL = process.env.VITE_API_BASE_URL || "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 // eslint-disable-next-line react-hooks/rules-of-hooks
 const api: AxiosInstance = useApi();
 
@@ -23,7 +23,6 @@ const api: AxiosInstance = useApi();
  */
 export async function getProducts(): Promise<ProductListResponse> {
   try {
-
     const response: AxiosResponse<ProductListResponse> = await api.get(
       API_ROUTES.PRODUCTS.LIST
     );
@@ -160,7 +159,6 @@ export async function getLatestProducts(
   limit: number
 ): Promise<ProductListResponse> {
   try {
-
     const response: AxiosResponse<ProductListResponse> = await api.get(
       API_ROUTES.PRODUCTS.LATEST,
       { limit } // correspond au param attendu côté backend
@@ -273,7 +271,6 @@ export async function addProductRating(
   star: number,
   isUpdate?: boolean
 ): Promise<ProductListResponse> {
-
   try {
     const response: AxiosResponse<ProductListResponse> = await api.post(
       API_ROUTES.PRODUCTS.RATE_ADD(id),
