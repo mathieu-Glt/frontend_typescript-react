@@ -25,7 +25,7 @@ export const API_ROUTES = {
   },
   PRODUCTS: {
     LIST: "products/",
-    DETAILS_ID: (id: string) => `products/id/${id}`,
+    DETAILS_ID: (id: string) => `products/${id}`,
     DETAILS_SLUG: (slug: string) => `products/slug/${slug}`,
     CREATE: "products/",
     UPDATE: (id: string) => `products/${id}`,
