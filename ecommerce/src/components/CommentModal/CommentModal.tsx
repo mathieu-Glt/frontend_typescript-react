@@ -26,8 +26,7 @@ export default function CommentsModal({
 
   useEffect(() => {
     if (open && productId) {
-      fetchCommentsByProductId(productId).catch((err) =>
-      );
+      fetchCommentsByProductId(productId);
     }
   }, [open, productId, fetchCommentsByProductId]);
 
