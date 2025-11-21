@@ -27,6 +27,7 @@
     "@stripe/stripe-js": "^8.3.0",
     "antd": "^5.27.6",
     "axios": "^1.13.2",
+    "formik": "^2.4.9",
     "react": "^19.1.1",
     "react-charts": "^2.1.0",
     "react-dom": "^19.1.1",
@@ -39,7 +40,8 @@
     "react-stripe-checkout": "^2.6.3",
     "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1",
-    "typewriter-effect": "^2.22.0"
+    "typewriter-effect": "^2.22.0",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
