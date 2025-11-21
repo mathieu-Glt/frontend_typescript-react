@@ -26,19 +26,19 @@ export const ListProduct = () => {
   const [fade, setFade] = useState(true);
   const pageSize = 3;
   const [clicked, setClicked] = useState(false);
+  useEffect(() => {
+    getAllProducts();
+  }, []);
 
   useEffect(() => {
     if (backList) {
-      setSearchProducts([]);
+      setSearchProducts(products);
       setClicked(false);
       setBackList(false);
       // setCurrentPage(1);
       navigate("/products");
     }
   }, [backList, navigate]);
-  useEffect(() => {
-    getAllProducts();
-  }, [listProducts]);
 
   useEffect(() => {
     if (getProducts && getProducts.length > 0) {
