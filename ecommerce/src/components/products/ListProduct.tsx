@@ -32,11 +32,12 @@ export const ListProduct = () => {
 
   useEffect(() => {
     if (backList) {
-      setSearchProducts(products);
       setClicked(false);
       setBackList(false);
-      // setCurrentPage(1);
-      navigate("/products");
+      setCurrentPage(1);
+      setSearchProducts([]);
+
+      getAllProducts();
     }
   }, [backList, navigate]);
 
