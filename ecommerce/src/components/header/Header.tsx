@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigation } from "../navigation/NavBar";
-import "./Header.css";
+import "./header.css";
 import iphoneImage from "../../assets/videos/Untitled.mp4";
 
 export const Header: React.FC = () => {
