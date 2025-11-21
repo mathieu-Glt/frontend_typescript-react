@@ -1,6 +1,6 @@
 import { useAuth } from "../hooks/useAuth";
 import { useAppSelector } from "../hooks/useReduxHooks";
-import ResetPasswordForm from "../components/form/resetPasswordForm";
+import ResetPasswordForm from "../components/form/ResetPasswordForm";
 import { useParams } from "react-router-dom";
 
 function ResetPasswordPage() {
